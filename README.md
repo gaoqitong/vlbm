@@ -46,8 +46,8 @@ time steps and walker2d may terminiate an episode early if the states meet speci
 
 
 ***************************
-*** Environmental Setup ***
-***************************
+## Environmental Setup
+
 
 Mujoco version: 2.1.0
 
@@ -62,11 +62,9 @@ Python requirements:
 	pandas 1.3.5
 	d4rl 1.1
 
-
-
 ***************************
-******* Train VLBM ********
-***************************
+
+## Train VLBM
 
 We provide two scripts for training VLBMs, i.e.,
 
@@ -94,18 +92,31 @@ To train on Ant/Hopper/Walker2d
 [options]
 
 -env 			str 		"Choose environment following <env>-<dataset>-v2"
+
 -no_gpu			bool		"Train w/o using GPUs"
+
 -gpu			int			"Select which GPU to use DEFAULT=0"
+
 -lr	   			float 		"Set learning rate for training VLBM DEFAULT=0.0001"
+
 -decay_step 	int 		"Set exponential decay step DEFAULT=1000"
+
 -decay_rate 	float 		"Set exponential decay rate DEFAULT=0.997"
+
 -max_iter 		int 		"Set max number of training iterations DEFAULT=1000"
+
 -seed 			int 		"Set random seed DEFAULT=2599"
+
 -gamma 			float 		"Set discounting factor DEFAULT=0.995"
+
 -batch_size 	int 		"Set minibatch size DEFAULT=64"
+
 -num_branch 	int 		"Set number of branches for VLBM decoder DEFAULT=10"
+
 -code_size 		int 		"Set dimension of the latent space DEFAULT=16"
+
 -beta 			float 		"Set the constant C in the objective DEFAULT=1.0"
+
 -val_interval 	int 		"Validation interval DEFAULT=50"
 
 
