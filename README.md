@@ -77,8 +77,6 @@ which do not involve early termination of episodes.
 The second script is used for environments that consider early termination,
 including Ant, Hopper, Walker2d.
 
---------------------------------------------------------------------------------------
-
 To train on Halfcheetah
 
 	python train_vlbm.py -env halfcheetah-medium-expert-v2 OR
@@ -95,35 +93,34 @@ To train on Ant/Hopper/Walker2d
 
 	-no_gpu			bool		"Train w/o using GPUs"
 
--gpu			int			"Select which GPU to use DEFAULT=0"
+	-gpu			int			"Select which GPU to use DEFAULT=0"
 
--lr	   			float 		"Set learning rate for training VLBM DEFAULT=0.0001"
+	-lr	   			float 		"Set learning rate for training VLBM DEFAULT=0.0001"
 
--decay_step 	int 		"Set exponential decay step DEFAULT=1000"
+	-decay_step 	int 		"Set exponential decay step DEFAULT=1000"
 
--decay_rate 	float 		"Set exponential decay rate DEFAULT=0.997"
+	-decay_rate 	float 		"Set exponential decay rate DEFAULT=0.997"
 
--max_iter 		int 		"Set max number of training iterations DEFAULT=1000"
+	-max_iter 		int 		"Set max number of training iterations DEFAULT=1000"
 
--seed 			int 		"Set random seed DEFAULT=2599"
+	-seed 			int 		"Set random seed DEFAULT=2599"
 
--gamma 			float 		"Set discounting factor DEFAULT=0.995"
+	-gamma 			float 		"Set discounting factor DEFAULT=0.995"
 
--batch_size 	int 		"Set minibatch size DEFAULT=64"
+	-batch_size 	int 		"Set minibatch size DEFAULT=64"
 
--num_branch 	int 		"Set number of branches for VLBM decoder DEFAULT=10"
+	-num_branch 	int 		"Set number of branches for VLBM decoder DEFAULT=10"
 
--code_size 		int 		"Set dimension of the latent space DEFAULT=16"
+	-code_size 		int 		"Set dimension of the latent space DEFAULT=16"
 
--beta 			float 		"Set the constant C in the objective DEFAULT=1.0"
+	-beta 			float 		"Set the constant C in the objective DEFAULT=1.0"
 
--val_interval 	int 		"Validation interval DEFAULT=50"
+	-val_interval 	int 		"Validation interval DEFAULT=50"
 
 
 
 ***************************
-****** Evaluate VLBM ******
-***************************
+## Evaluate VLBM
 
 Similar to training, we also two seperate scripts for environments that consider (or not) 
 early terminations.
@@ -131,7 +128,6 @@ early terminations.
 We also provide checkpoints for halfcheetah-medium-expert-v2 and walker2d-medium-expert-v2
 under path "./saved_model/", for reproducibility and demonstration purposes. 
 
---------------------------------------------------------------------------------------------
 
 To evaluate VLBM on halfcheetah-medium-expert-v2
 
@@ -145,17 +141,17 @@ To evaluate VLBM on walker2d-medium-expert-v2
 
 REQUIRED:
 
--path 			str 		"Path to checkpoint folder"
+	-path 			str 		"Path to checkpoint folder"
 
 OTHERS:
 
--no_gpu			bool 		"Train w/o using GPUs"
--gpu 			int 		"Select which GPU to use DEFAULT=0"
--seed 			int 		"Set random seed"
--gamma 			float 		"Set discounting factor DEFAULT=0.995"
--code_size 		int 		"Set dimension of the latent space DEFAULT=16"
--env 			str 		"Choose environment following <env>-<dataset>-v2"
--max_episodes 	int 		"Maximum number of episodes run for evaluation"
+	-no_gpu			bool 		"Train w/o using GPUs"
+	-gpu 			int 		"Select which GPU to use DEFAULT=0"
+	-seed 			int 		"Set random seed"
+	-gamma 			float 		"Set discounting factor DEFAULT=0.995"
+	-code_size 		int 		"Set dimension of the latent space DEFAULT=16"
+	-env 			str 		"Choose environment following <env>-<dataset>-v2"
+	-max_episodes 	int 		"Maximum number of episodes run for evaluation"
 
 
 
