@@ -45,7 +45,6 @@ using the halfcheetah and walker2d environments, as halfcheetah will always run 
 time steps and walker2d may terminiate an episode early if the states meet specific critera.
 
 
-***************************
 ## Environmental Setup
 
 
@@ -62,7 +61,6 @@ Python requirements:
 	pandas 1.3.5
 	d4rl 1.1
 
-***************************
 
 ## Train VLBM
 
@@ -119,7 +117,6 @@ To train on Ant/Hopper/Walker2d
 
 
 
-***************************
 ## Evaluate VLBM
 
 Similar to training, we also two seperate scripts for environments that consider (or not) 
