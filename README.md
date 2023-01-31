@@ -52,13 +52,21 @@ Mujoco version: 2.1.0
 
 Python requirements:
 	Python 3.7
+
 	tensorflow 1.15.1
+
 	tensorflow-probability 0.8.0
+
 	mujoco-py 2.0.2.13
+
 	dm-control 0.0.322773188
+
 	gym 0.21.0
+
 	numpy 1.21.5
+
 	pandas 1.3.5
+
 	d4rl 1.1
 
 
