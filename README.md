@@ -36,7 +36,7 @@ or
 
 
 ----------------------------------------------------------------------------------------
-
+## Summary
 
 This folder contain the codes for training and evaluating variational latent branching models (VLBMs). 
 
@@ -91,9 +91,9 @@ To train on Ant/Hopper/Walker2d
 
 [options]
 
--env 			str 		"Choose environment following <env>-<dataset>-v2"
+	-env 			str 		"Choose environment following <env>-<dataset>-v2"
 
--no_gpu			bool		"Train w/o using GPUs"
+	-no_gpu			bool		"Train w/o using GPUs"
 
 -gpu			int			"Select which GPU to use DEFAULT=0"
 
