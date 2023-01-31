@@ -52,7 +52,7 @@ Mujoco version: 2.1.0
 
 Python requirements:
 	
-        Python 3.7
+    Python 3.7
 
 	tensorflow 1.15.1
 
