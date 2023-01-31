@@ -10,7 +10,7 @@ If you find our work and code useful, please consider cite the paper
 ```
 @inproceedings{
 gao2022gradient,
-title={Variational Latent Branching Model for Off-Policy Evaluation },
+title={Variational Latent Branching Model for Off-Policy Evaluation},
 author={Qitong Gao and Ge Gao and Min Chi and Miroslav Pajic},
 booktitle={International Conference on Learning Representations},
 year={2023},
