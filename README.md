@@ -151,7 +151,7 @@ OTHERS:
 	-gamma 			float 		"Set discounting factor DEFAULT=0.995"
 	-code_size 		int 		"Set dimension of the latent space DEFAULT=16"
 	-env 			str 		"Choose environment following <env>-<dataset>-v2"
-	-max_episodes 	int 		"Maximum number of episodes run for evaluation"
+	-max_episodes 		int 		"Maximum number of episodes run for evaluation"
 
 
 
