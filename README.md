@@ -84,15 +84,13 @@ which do not involve early termination of episodes.
 The second script is used for environments that consider early termination,
 including Ant, Hopper, Walker2d.
 
-To train on Halfcheetah
+For example, to train on Halfcheetah-medium-expert
 
-	python train_vlbm.py -env halfcheetah-medium-expert-v2 OR
-	python train_vlbm.py -env halfcheetah-medium-v2
+	python train_vlbm.py -env halfcheetah-medium-expert-v2
 
-To train on Ant/Hopper/Walker2d
+To train on Ant/Hopper/Walker2d-medium-expert
 	
-	python train_vlbm_for_envs_with_early_termination.py -env <ant/hopper/walker2d>-medium-expert-v2 OR
-	python train_vlbm_for_envs_with_early_termination.py -env <ant/hopper/walker2d>-medium-v2
+	python train_vlbm_for_envs_with_early_termination.py -env <ant/hopper/walker2d>-medium-expert-v2 
 
 [options]
 
